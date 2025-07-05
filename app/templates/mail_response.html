@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение email</title>
+</head>
+<body style="margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                    <table cellpadding="0" cellspacing="0" border="0" width="600" style="max-width: 600px;
+            margin: 0 auto;">
+                        <tbody>
+
+                            <!-- Header -->
+                            <tr>
+                                <td style="background-color: #2563eb;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="/placeholder.svg" alt="Логотип" style="width: 60px; height: 60px; margin-bottom: 10px;">
+                                                    <h1 style="color: #ffffff; font-size: 24px; font-weight: bold; margin: 0;">Тест-API</h1>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            <!-- Main Content -->
+                             <tr>
+                                <td style="padding: 20px 0;">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <h2 style="font-size: 24px; font-weight: bold; color: #1f2937; margin-bottom: 20px;">
+                                                                        Ваш код подтверждения
+                                                                    </h2>
+                                                                    
+                                                                    <div style="font-size: 36px; font-weight: bold; color: #2563eb; background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; letter-spacing: 8px;">
+                                                                        {{ code }}
+                                                                    </div>
+                                                                    
+                                                                    <p style="font-size: 16px; color: #4b5563; line-height: 1.6; margin-bottom: 30px;">
+                                                                        Он действует 10 минут — если не успеете использовать, запросите новый.<br><br>
+                                                                        Если вы не знаете, почему пришло это письмо — просто проигнорируйте его. 
+                                                                        А чтобы дополнительно защитить аккаунт, измените пароль в настройках.<br><br>
+                                                                        Приятного использования,<br>
+                                                                        <strong>Тест-API</strong>
+                                                                    </p>
+                                                                    
+                                                                    <a href="http://127.0.0.1:8000/api/v1/auth/verify-email?session_id={{ session_id }}&code={{ code }}&username={{ username }}" style="display: inline-block; background-color: #2563eb; color: #ffffff !important; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold; margin: 20px 0;">
+                                                                        Подтвердить email
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            <!-- Footer -->
+                            <tr>
+                                <td style="background-color: #efeff1;
+            border-radius: 15px;
+            padding: 30px;
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.5;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    <div style="margin-bottom: 15px;">
+                                                        Цены и скидки на товары в письме актуальны на момент его отправки.
+                                                    </div>
+                                                    
+                                                    <div style="margin-bottom: 15px;">
+                                                        <strong>Телефон:</strong><br>
+                                                        8 (XXX) XXX - XX - XX<br>
+                                                        8 (XXX) XXX - XX - XX<br>
+                                                        (круглосуточно)
+                                                    </div>
+                                                    
+                                                    <div style="margin: 15px 0;">
+                                                        <a href="#" style="color: #2563eb; text-decoration: none; margin: 0 10px;">VK</a>
+                                                        <a href="#" style="color: #2563eb; text-decoration: none; margin: 0 10px;">YouTube</a>
+                                                        <a href="#" style="color: #2563eb; text-decoration: none; margin: 0 10px;">Telegram</a>
+                                                    </div>
+                                                    
+                                                    <div style="font-size: 11px; color: #9ca3af; margin-top: 20px;">
+                                                        Реклама. ООО «Тест-API», г. Ростов-на-Дону. Вы получили это письмо, потому что подписались на уведомления 
+                                                        о подтверждении через e-mail: www.Тест-API.ru
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
